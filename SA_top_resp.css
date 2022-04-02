@@ -1,0 +1,79 @@
+@media (max-width: 910px) {
+  html {
+    font-size: 66%;
+  }
+
+  .text-title, .flow dt {
+    font-size: 1.3rem;
+  }
+  
+  /* -- topA -- */
+  .girl {
+    width: 12rem;
+  }
+}
+
+
+
+
+@media (max-width: 670px) {
+  html {
+      font-size: 60%;
+  }
+
+  .main-title span {
+    right: -75px;
+  }
+
+  .newline {
+    font-size: 80%;
+  }
+
+  /* -- header -- */
+  header {
+    height: 45px;
+  }
+
+  .header-logo {
+    width: 36px;
+    padding-top: 2px;
+  }
+
+  .header-list li {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 26px;
+    color: white;
+    padding-top: 4px;
+  }
+
+  /* -- topA -- */
+  .inside-bubble .text-contents {
+    display: none;
+  }
+  .text-title {
+    padding-top: 18px;
+  }
+
+  /* -- topB -- */
+  .selfie {
+    margin: 0 5px;
+    width: 8rem;
+  }
+
+  .about .text-contents {
+    font-size: 1.15rem;
+  }
+
+   /* -- before -- */
+   .contents .left {
+    margin: 30px 0 30px 10px;
+  }
+  
+  .contents .right {
+    margin: 30px 10px 30px 0;
+  }
+}
