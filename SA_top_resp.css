@@ -1,0 +1,424 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 75%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 80rem;
+  padding: 0 1.3rem;
+  margin: 0 auto;
+}
+
+.main-title {
+  position: relative;
+  height: 3.8rem;
+  margin-right: 6rem;
+  padding: 0.5rem 1rem 0 1.5rem;
+  word-break: break-all;
+  font-size: 2.0rem;
+  color: #fff;
+  background: tomato;
+  display: inline-block;
+  margin: 8rem 0 4.5rem 0;
+}
+
+.main-title:after {
+  position: absolute;
+  top: 0;
+  right: -5.5rem;
+  width: 0;
+  height: 0;
+  content: '';
+  border-width: 3.8rem 5.5rem 0 0;
+  border-style: solid;
+  border-color: tomato transparent transparent transparent;
+}
+
+.main-title span {
+  font-size: 3.2rem;
+  position: absolute;
+  top: 0;
+  right: -90px;
+  display: block;
+  padding-top: 0.3rem;
+  padding-left: 1.6rem;
+  color: tomato;
+}
+
+li {
+  float: left;
+  padding: 20px 20px;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.newline {
+  display: inline-block;
+}
+
+.newline:not(.before-sum .newline):not(#quiz .newline):not(.notice .newline) {
+  margin: 2px 0;
+  background: linear-gradient(transparent 70%, #ff6 70%);
+}
+
+.text-contents {
+  font-size: 1.35rem;
+}
+
+/* ------------- header -------------- */
+
+header {
+  background-color: rgba(255, 99, 71, 0.8);
+  width: 100vw;
+  height: 65px;
+  position: fixed;
+  z-index: 10;
+}
+
+.header-logo {
+  width : 60px;
+  float: left;
+  border-radius: 30px;
+  margin: 3px 0;
+}
+
+.header-list {
+  float: right;
+}
+
+nav li a {
+  font-weight: bold;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* ------------- topA -------------- */
+
+.topA {
+  background: linear-gradient(90deg, rgba(64, 224, 208, 0.7) 0%, rgba(64, 224, 208, 0.7) 50%, rgba(255, 215, 0, 0.7) 50%, rgba(255, 215, 0, 0.7) 100%);
+  height: 100%;
+  padding-top: 6rem;
+}
+
+.notice {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 0.7rem;
+  padding: 0.4rem 0;
+  background-color: snow;
+}
+
+.notice h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  }
+
+.bubbles, .girl {
+  padding: 30px 16px 16px 16px;
+  float: left;
+}
+
+.bubbles {
+  position: relative;
+}
+
+.bubble-left, .bubble-right {
+  width: 360px;
+
+}
+
+.bubble-right {
+  transform: scale(-1, 1);
+}
+
+.girl {
+  width: 16rem;
+}
+
+.inside-bubble {
+  width: 65%;
+  position: absolute;
+  top: 27%;
+  left: 18%;
+  text-align: center;
+}
+
+.text-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.declaration h3 {
+  font-size: 1.6rem;
+}
+
+/* ------------- topB -------------- */
+
+.topB {
+  height: 100%;
+  padding: 80px 0;
+}
+
+.about {
+  max-width: 55rem;
+  margin: 0 auto;
+}
+
+.selfie {
+  width: 10rem;
+  border-radius: 5rem;
+  float: left;
+  margin: 0 20px;
+}
+
+.declaration {
+  text-align: center;
+  padding-top: 60px;
+}
+
+/* ------------- before -------------- */
+
+#before {
+  height: 100%;
+  background-color: #FFF5F9;
+}
+
+.contents ul {
+  display: flex;
+  background: linear-gradient(90deg, rgba(64, 224, 208, 0.5) 0%, rgba(64, 224, 208, 0.5) 50%, rgba(255, 215, 0, 0.5) 50%, rgba(255, 215, 0, 0.5) 100%);
+}
+
+.schools {
+  width: 16%;
+  padding: 0;
+}
+
+.content {
+  width: 42%;
+  padding: 0;
+}
+
+.flow {
+  border-radius: 70px;
+  margin-bottom: 22px;
+  height: 95%;
+  background-color: snow;
+}
+
+.contents .left {
+  margin: 40px 0 40px 50px;
+}
+
+.contents .right {
+  margin: 40px 50px 40px 0;
+}
+
+.content .blue{
+  border: 5px solid rgb(64, 224, 208);
+}
+
+.content .yellow {
+  border: 5px solid rgb(255, 215, 0);
+}
+
+.flow dl {
+  padding: 20px;
+}
+
+.flow dt {
+  font-size: 1.55rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.school {
+  text-align: center;
+  background-color: snow;
+  font-size: 1.9rem;
+  padding: 0.6rem;
+  margin-top: 130px;
+}
+
+.highlight {
+  color: tomato;
+}
+
+.arrow {
+  text-align: center;
+}
+
+.arrow-S {
+  width: 4.6rem;
+}
+
+.arrow-L {
+  width: 4rem;
+  margin: 30px 0;
+}
+
+.before-sum {
+  color: steelblue;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+/* ------------- decision -------------- */
+#decision {
+  background-color: #FFF5F9;
+  height: 100%;
+}
+
+.heading {
+  font-size: 1.6rem;
+  margin: 0 auto; 
+  padding-bottom: 60px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.heading .blue {
+  color: turquoise;
+}
+
+.heading .yellow {
+  color: gold;
+}
+
+.vision h3, .decision-sum h3 {
+  border-bottom: 3px solid tomato;
+  font-size: 1.6rem;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.details {
+  margin: 20px;
+  padding: 15px 30px;
+  border: 1px dotted tomato;
+  background-color: snow;
+}
+
+.details .section-title {
+  padding: 7px 0;
+}
+
+.details .text-contents {
+  padding-left: 30px;
+  padding-bottom: 15px;
+}
+
+.decision-sum h3 {
+  margin-bottom: 20px;
+}
+
+.sum-content {
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.decision-sum h4 {
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+/* ------------- quiz -------------- */
+
+#quiz {
+  height: 100%;
+  text-align: center;
+}
+
+#quiz h3 {
+  margin: 80px auto 40px auto;
+  font-size: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: tomato;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 32px;
+  border-radius: 6px;
+  box-shadow: 0 6px orangered;
+  opacity: 0.85;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btn:active {
+  box-shadow: none;
+  position: relative;
+  top: 6px;
+}
+
+/* ------------- footer -------------- */
+footer {
+  height: 75px;
+  margin-top: 100px;
+  padding: 15px;
+  background-color: beige;
+}
+
+footer p {
+  padding-left: 8px;
+  font-size: 10px;
+}
+
+.avator {
+  float: left;
+}
+
+.avator img {
+  width: 50px;
+  margin-right: 8px;
+  border-radius: 25px;
+}
